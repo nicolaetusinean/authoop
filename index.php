@@ -11,8 +11,13 @@ ini_set('display_startup_errors',1);
 error_reporting(-1);
 
 
-require_once 'Controller/' .$_GET['controller'].'Controller.php';
+// the controller name is the name given in URL + the text Controller
+$controllerName = $_GET['controller'] . 'Controller';
+// import the given controller from the Controller folder
+require_once 'Controller/' . $controllerName . '.php';
+// $authcontroller = new AuthController();
+$controller = new $controllerName(); // create an object of the given controller
 
-$authcontroller = new AuthController();
-
-echo $authcontroller->login();
+$actionName = $_GET['action']; // get the action from URL
+// echo $authcontroller->login();
+echo $controller->$actionName(); // call the action in the object created above

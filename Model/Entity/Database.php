@@ -3,11 +3,8 @@
 class Database {
        
     protected $adress;
-    
     protected $username;
-    
     protected $password;
-    
     protected $name;
     
       
@@ -19,7 +16,7 @@ class Database {
     
     public function getAdress($adress)
     {
-        return $this->$adress;
+        return $this->adress;
     }
     
     public function setUsername($username)
@@ -30,7 +27,7 @@ class Database {
     
     public function getUsername($username)
     {
-        return $this->$username;
+        return $this->username;
     }
     
     public function setPassword($password)
@@ -41,18 +38,18 @@ class Database {
     
     public function getPassword($password)
     {
-        return $this->$password;
+        return $this->password;
     }
     
-    public function setFirstName($firstname) 
+    public function setName($firstname) 
     {
         $this->firstname=$firstname;
         return $this;  
     }
     
-    public function getFirstName($firstname)
+    public function getName($firstname)
     {
-        return $this->$firstname;
+        return $this->firstname;
     }
 }
 

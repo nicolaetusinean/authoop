@@ -19,7 +19,7 @@ class Message {
     
     public function getText($text) 
     {
-        return $this->$text;
+        return $this->text;
     }
     
     public function setSender($sender) 
@@ -30,7 +30,7 @@ class Message {
     
     public function getSender($sender)
     {
-        return $this->$sender;
+        return $this->sender;
     }
     
     public function setRecipient($recipient)
@@ -41,7 +41,7 @@ class Message {
     
     public function getRecipient($recipient)
     {
-        return $this->$recipient;
+        return $this->recipient;
     }
     
     public function setData($data) 
@@ -52,6 +52,6 @@ class Message {
     
     public function getData($data)
     {
-        return $this->$data;
+        return $this->data;
     }
 }

@@ -25,7 +25,7 @@ class User {
     
     public function getId($id) 
     {
-        return $this->$id;
+        return $this->id;
     }
     
     public function setFirstName($firstname) 
@@ -36,7 +36,7 @@ class User {
     
     public function getFirstName($firstname) 
     {
-        return $this->$firstname;
+        return $this->firstname;
     }
     
     public function setLastName($lastname) 
@@ -47,7 +47,7 @@ class User {
     
     public function getLastName($lastname)
     {
-        return $this->$lastname;
+        return $this->lastname;
     }
     
     public function setCity($city) 
@@ -58,7 +58,7 @@ class User {
     
     public function getCity($city) 
     {
-        return $this->$city;
+        return $this->city;
     }
     
     public function setAge($age) 
@@ -69,7 +69,7 @@ class User {
     
     public function getAge($age)
     {
-        return $this->$age;
+        return $this->age;
     }
     
     public function setUsername($username) 
@@ -80,7 +80,7 @@ class User {
     
     public function getUsername($username)
     {
-        return $this->$username;
+        return $this->username;
     }
     
     public function setPassword($password) 
@@ -91,7 +91,7 @@ class User {
     
     public function getPassword($password) 
     {
-        return $this->$password;
+        return $this->password;
     }
 }
 

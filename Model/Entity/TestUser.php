@@ -1,6 +1,6 @@
 <?php
 
-require user.php
+require user.php;
         $user = newUser();
         $user -> setid(1)
               -> setFirstName('Ancuta')

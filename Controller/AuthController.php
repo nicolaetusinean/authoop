@@ -2,12 +2,12 @@
 
 class AuthController 
 {
-    public function login() 
+    public function loginAction() 
     {
         return 'V-ati logat cu succes!';
     }
     
-    public function logout()
+    public function logoutAction()
     {
         return 'V-ati delogat cu succes!';
     }

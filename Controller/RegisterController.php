@@ -1,8 +1,11 @@
 <?php
 class RegisterController 
 {
-    public function register()
+    public function registerAction()
     {
-        
+        ///// $this->helpMe();
+        return 'null';
     }
+    
+    
 }
